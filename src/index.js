@@ -1,3 +1,10 @@
 module.exports = async function App(context) {
-  await context.sendText('Welcome to Bottender');
+ 
+    if (context.event.text == 'hi') {
+      return SayHi;
+   }
 };
+
+async function SayHi(context) {
+  await context.sendText('Halo apakabar');
+}
