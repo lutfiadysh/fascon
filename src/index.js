@@ -10,11 +10,16 @@ async function SayHi(context) {
     {
       type: 'web_url',
       url: 'https://petersapparel.parseapp.com',
-      title: 'Mulai',
+      title: 'MULAI',
     },
     {
       type: 'postback',
-      title: 'Start Chatting',
+      title: 'SUPPORT',
+      payload: 'USER_DEFINED_PAYLOAD',
+    },
+    {
+      type: 'postback',
+      title: 'SCAN QR CODE',
       payload: 'USER_DEFINED_PAYLOAD',
     },
   ]);
