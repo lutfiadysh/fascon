@@ -6,5 +6,5 @@ module.exports = async function App(context) {
 };
 
 async function SayHi(context) {
-  await context.sendText('Halo apakabar');
+  await context.sendText('Fascon Silahkan tekan tombol dibawah ini untuk melihat produk');
 }
