@@ -1,6 +1,6 @@
 module.exports = async function App(context) {
  
-    if (context.event.text == 'hi') {
+    if (context.event.text == 'hi' || context.event.text == 'Hi' || context.event.text == "hello" || context.event.text == "Hello") {
       return SayHi;
    }
 };
