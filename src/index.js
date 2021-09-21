@@ -6,29 +6,25 @@ module.exports = async function App(context) {
 };
 
 async function SayHi(context) {
-  await context.sendText(askTemplate);
-}
-
-const askTemplate = (text) => {
-  return {
-      "attachment":{
-          "type":"template",
-          "payload":{
-              "template_type":"button",
-              "text": text,
-              "buttons":[
-                  {
-                      "type":"postback",
-                      "title":"Cats",
-                      "payload":"CAT_PICS"
-                  },
-                  {
-                      "type":"postback",
-                      "title":"Dogs",
-                      "payload":"DOG_PICS"
-                  }
-              ]
-          }
-      }
-  }
+  await context.sendGenericTemplate([
+    {
+      title: "Welcome to Peter's Hats",
+      imageUrl: 'https://petersfancybrownhats.com/company_image.png',
+      subtitle: "We've got the right hat for everyone.",
+      defaultAction: {
+        type: 'web_url',
+        url: 'https://peterssendreceiveapp.ngrok.io/view?item=103',
+        messengerExtensions: true,
+        webviewHeightRatio: 'tall',
+        fallbackUrl: 'https://peterssendreceiveapp.ngrok.io/',
+      },
+      buttons: [
+        {
+          type: 'postback',
+          title: 'Start Chatting',
+          payload: 'DEVELOPER_DEFINED_PAYLOAD',
+        },
+      ],
+    },
+  ]);
 }
