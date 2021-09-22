@@ -27,7 +27,7 @@ async function SayHi(context) {
   await context.sendText('Hi!', {
     quickReplies: [
       {
-        contentType: 'user_email',
+        contentType: 'USER_ID',
       },
     ],
   });
