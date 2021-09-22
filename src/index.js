@@ -29,11 +29,6 @@ async function SayHi(context) {
       {
         contentType: 'user_email',
       },
-      {
-        contentType: 'web_url',
-        url: 'https://google.com',
-        title: 'MULAI',
-      },
     ],
   });
 }
