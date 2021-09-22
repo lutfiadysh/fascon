@@ -6,7 +6,7 @@ module.exports = async function App(context) {
 };
 
 async function SayHi(context) {
-  await context.sendButtonTemplate('Fascon Silahkan tekan tombol dibawah ini untuk melihat produk', {
+  await context.sendText('Fascon Silahkan tekan tombol dibawah ini untuk melihat produk', {
     quickReplies:[
       {
         type: 'web_url',
