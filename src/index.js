@@ -23,4 +23,12 @@ async function SayHi(context) {
       payload: 'USER_DEFINED_PAYLOAD',
     },
   ]);
+
+  await context.sendText('Hi!', {
+    quickReplies: [
+      {
+        contentType: 'user_email',
+      },
+    ],
+  });
 }
