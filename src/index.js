@@ -9,7 +9,7 @@ async function SayHi(context) {
   await context.sendButtonTemplate('Fascon Silahkan tekan tombol dibawah ini untuk melihat produk', [
     {
       type: 'web_url',
-      url: 'https://google.com',
+      url: 'https://instagram.com',
       title: 'MULAI',
     },
     {
