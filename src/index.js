@@ -14,7 +14,7 @@ async function SayHi(context) {
     },
     {
       type: 'postback',
-      title: 'SUPPORT',
+      title: 'SUPPORTs',
       payload: 'USER_DEFINED_PAYLOAD',
     },
     {
